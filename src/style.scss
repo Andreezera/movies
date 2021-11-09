@@ -1,0 +1,32 @@
+@import "./theme/variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  .root {
+    height: 100%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

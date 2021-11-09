@@ -1,0 +1,21 @@
+@import "../../theme/variables";
+
+.circle-average{
+  height: 100%;
+  border-radius: 50%;
+  border: $primary-color solid 4px;
+  position: static;
+
+  .vote-average {  
+    text-align: center;
+    color: $secundary-color;
+    height: 100%;
+    border: $secundary-color solid 3px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    padding: 10px 5px 8px 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

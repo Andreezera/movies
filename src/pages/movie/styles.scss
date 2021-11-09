@@ -1,0 +1,106 @@
+@import "../../../src/theme/variables";
+
+div.movie-details-container {
+  background: #fff;
+  background-position: center;
+  height: 100%;
+  padding-top: 4rem;
+
+  header.movie-header-container {
+    background-color: $light-grey;
+    height: $header-height;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+
+    p.movie-title {
+      font-size: 3rem;
+      color: $primary-color
+    }
+
+    p.movie-release-date {
+      font-size: 1.5rem;
+      color: $black
+    }
+  }
+  
+  div.movie-details-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div.movie-details {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 3rem;
+      width: 100%;
+
+      .title {
+        color: $primary-color;
+        font-size: 30px;
+        padding-bottom: 5px;
+      }
+      hr {
+        border: 1px solid $secundary-color;
+      }
+
+      .movie-overview {
+        width: 100%;
+        .content {
+          color: $black;
+          font-size: 20px;
+          padding-top: 15px;
+        }
+      }
+
+      .movie-informations{
+        width: 100%;
+        padding-top: 40px;
+        
+        .content {
+          color: $black;
+          font-size: 20px;
+          padding-top: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .info-title {
+              color: $primary-color;
+              font-size: 24px;
+              padding-bottom: 5px;
+            }
+            .info-detail {
+              color: $black;
+              font-size: 18px;
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+      .movie-extra {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.5rem;
+
+        .genres {
+          display: flex;
+          flex-direction: row;
+          height: min-content;
+        }
+      }
+    }
+  }
+
+  .movie-trailer {
+    margin-top: 2rem;
+  }
+}
